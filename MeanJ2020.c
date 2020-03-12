@@ -72,7 +72,7 @@ ssize_t mean_read (struct file *filp, char __user *buf, size_t count, loff_t *of
 {
 	int len;
 	int entera,fraccion;
-	char respuesta[1024];
+	char respuesta[32];
 	if(*off>0) return 0;
 	if(cantidad_numeros>0)
 	{
