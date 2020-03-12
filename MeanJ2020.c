@@ -23,6 +23,7 @@ static int cantidad_numeros=0;
 /****************************************************************************/
 
 // escritura del fichero
+#define MAXSIZE[32]
 ssize_t mean_write (struct file *filp,const char __user *buf, size_t count, loff_t *off)
 {
 	char copia_de_buf[16];
